@@ -1,4 +1,4 @@
-# 📊 Regional Sales Dashboard
+# Regional Sales Dashboard
 
 **An end-to-end data analytics & business intelligence project** — from raw multi-sheet Excel data to a fully interactive Power BI dashboard, powered by a complete Python exploratory data analysis (EDA) pipeline.
 
@@ -7,7 +7,7 @@
 ![Dashboard Home](screenshots/dashboard_home.png)
 
 
-## 🧭 Project Overview
+## Project Overview
 
 This project analyzes five years of regional sales data for a fictional distribution company, **Acme Co.**, taking it through the complete analytics lifecycle:
 
@@ -18,7 +18,7 @@ The goal is to demonstrate the same workflow used by data analysts and BI develo
 
 ---
 
-## ❓ Problem Statement & Objective
+##  Problem Statement & Objective
 
 **Problem Statement:** Organizations need to understand the factors influencing sales and profitability. This project analyzes historical sales data to identify key trends, performance drivers, and business opportunities across products, channels, customers, and regions.
 
@@ -30,7 +30,7 @@ The goal is to demonstrate the same workflow used by data analysts and BI develo
 
 ---
 
-## 🛠 Tech Stack
+##  Tech Stack
 
 | Category | Tools / Libraries |
 |---|---|
@@ -44,7 +44,7 @@ The goal is to demonstrate the same workflow used by data analysts and BI develo
 
 ---
 
-## 📂 Repository Structure
+##  Repository Structure
 
 ```
 regional-sales-dashboard/
@@ -76,7 +76,7 @@ regional-sales-dashboard/
 
 ---
 
-## 🐍 Phase 1 — Python EDA (Jupyter Notebook)
+##  Phase 1 — Python EDA (Jupyter Notebook)
 
 ### Data Sources
 The raw workbook `Regional Sales Dataset.xlsx` contains six sheets, all loaded with a single `pd.read_excel(..., sheet_name=None)` call:
@@ -106,19 +106,19 @@ The raw workbook `Regional Sales Dataset.xlsx` contains six sheets, all loaded w
 | `profit_margin_%` | `(profit / revenue) × 100` | Profit as % of revenue |
 
 ### Exploratory Analysis Highlights
-- 📈 **Seasonality** — revenue peaks in January and again mid-year (May/August), with a consistent February trough.
-- 🏆 **Top products** — Product 26 (₹117.29M) and Product 25 (₹109.47M) lead revenue; Product 18 leads on *average profit per order* (₹8,531) despite not being a top-10 revenue product.
-- 🔀 **Channel mix** — Wholesale drives 54.1% of revenue, Distributor 31.3%, Export 14.6% — but all three channels convert to a similar ~37% average profit margin.
-- 💲 **Pricing vs. margin** — a regression plot shows unit price has almost no correlation with profit margin; cost structure matters more than price point.
-- 🗺️ **Geography** — California leads decisively (₹228.79M revenue, 12,000 orders), more than double the next state, Illinois.
-- 👥 **Customers** — a small set of top accounts (Aibox Company, State Ltd, Pixoboo Corp) drive disproportionate revenue versus the bottom-tier accounts.
-- 🔥 **Correlation heatmap** — confirms revenue is strongly tied to unit price (r = 0.91) and cost (r = 0.85); profit margin is only weakly related to either (r ≈ -0.28 to 0.38).
+-  **Seasonality** — revenue peaks in January and again mid-year (May/August), with a consistent February trough.
+-  **Top products** — Product 26 (₹117.29M) and Product 25 (₹109.47M) lead revenue; Product 18 leads on *average profit per order* (₹8,531) despite not being a top-10 revenue product.
+-  **Channel mix** — Wholesale drives 54.1% of revenue, Distributor 31.3%, Export 14.6% — but all three channels convert to a similar ~37% average profit margin.
+-  **Pricing vs. margin** — a regression plot shows unit price has almost no correlation with profit margin; cost structure matters more than price point.
+-  **Geography** — California leads decisively (₹228.79M revenue, 12,000 orders), more than double the next state, Illinois.
+-  **Customers** — a small set of top accounts (Aibox Company, State Ltd, Pixoboo Corp) drive disproportionate revenue versus the bottom-tier accounts.
+-  **Correlation heatmap** — confirms revenue is strongly tied to unit price (r = 0.91) and cost (r = 0.85); profit margin is only weakly related to either (r ≈ -0.28 to 0.38).
 
 > Full code, charts, and commentary are in [`notebook/Regional_Sales_Analysis.ipynb`](notebook/).
 
 ---
 
-## 📊 Phase 2 — Power BI Dashboard
+##  Phase 2 — Power BI Dashboard
 
 The cleaned dataset feeds a 5-page interactive Power BI report with a consistent purple/white theme, a custom home page, and a persistent slicer panel.
 
@@ -154,7 +154,7 @@ Three synchronized slicers appear on every analytical page:
 
 ---
 
-## 💡 Key Insights
+##  Key Insights
 
 1. Sales are highly seasonal and repeatable — useful for inventory and staffing planning.
 2. Revenue is concentrated in a handful of products and states, creating concentration risk worth monitoring.
@@ -165,7 +165,7 @@ Three synchronized slicers appear on every analytical page:
 
 ---
 
-## ▶️ How to Run This Project
+##  How to Run This Project
 
 **Python / Jupyter Notebook**
 ```bash
@@ -183,7 +183,7 @@ jupyter notebook notebook/Regional_Sales_Analysis.ipynb
 
 ---
 
-## 🚀 Future Enhancements
+##  Future Enhancements
 
 - Extend the budget data to all five years for a full actual-vs-budget trend line.
 - Add year-over-year / month-over-month growth measures using DAX time-intelligence.
