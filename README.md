@@ -2,9 +2,7 @@
 
 **An end-to-end data analytics & business intelligence project** — from raw multi-sheet Excel data to a fully interactive Power BI dashboard, powered by a complete Python exploratory data analysis (EDA) pipeline.
 
-> Dataset coverage: Acme Co. USA Sales, **2014 – 2018** &nbsp;|&nbsp; Tools: **Python (Pandas, NumPy, Matplotlib, Seaborn)** · **Jupyter Notebook** · **Power BI Desktop**
-
-![Dashboard Home](screenshots/dashboard_home.png)
+Dataset coverage: Acme Co. USA Sales, **2014 – 2018** 
 
 
 ## Project Overview
@@ -16,7 +14,7 @@ This project analyzes five years of regional sales data for a fictional distribu
 
 The goal is to demonstrate the same workflow used by data analysts and BI developers in industry: raw data → clean data → insight → a self-service dashboard a business stakeholder can explore without touching a line of code.
 
----
+
 
 ##  Problem Statement & Objective
 
@@ -28,7 +26,7 @@ The goal is to demonstrate the same workflow used by data analysts and BI develo
 - Understanding profitability drivers such as pricing, cost, and sales channel.
 - Supporting data-driven decisions through visualization and an interactive reporting layer.
 
----
+
 
 ##  Tech Stack
 
@@ -42,7 +40,7 @@ The goal is to demonstrate the same workflow used by data analysts and BI develo
 | Business Intelligence Tool | Power BI Desktop |
 | Version Control | Git & GitHub |
 
----
+
 
 ##  Repository Structure
 
@@ -74,29 +72,6 @@ regional-sales-dashboard/
 └── README.md
 ```
 
----
-
-##  Phase 1 — Python EDA (Jupyter Notebook)
-
-### Data Sources
-The raw workbook `Regional Sales Dataset.xlsx` contains six sheets, all loaded with a single `pd.read_excel(..., sheet_name=None)` call:
-
-| Sheet | Rows × Cols | Description |
-|---|---|---|
-| Sales Orders | 64,104 × 12 | Every order line — date, customer, channel, product, quantity, price, revenue, cost |
-| Customers | 175 × 2 | Customer Index → Customer Name lookup |
-| Products | 30 × 2 | Product Index → Product Name lookup |
-| Regions | 994 × 15 | Delivery region reference data (state, county, lat/lon, region) |
-| State Regions | 48 × 3 | State → sales region mapping |
-| 2017 Budgets | 30 × 2 | Planned 2017 revenue budget per product |
-
-### Data Cleaning & Wrangling
-- Merged all lookup tables into the Sales Orders table, resolving indices into readable names.
-- Standardized column names (lowercase, underscore-separated).
-- Verified **zero missing values** and **zero duplicate rows** in the core transactional data.
-- The only nulls after merging were in `budget` (48,841 of 64,104 rows) — expected, since the 2017 Budgets sheet only covers a single year.
-- Extracted `order_month_num` and `order_month_name` from `order_date`.
-- Exported the cleaned table to `Regional_Sales_Cleaned.csv`.
 
 ### Feature Engineering
 | Column | Formula | Purpose |
@@ -114,28 +89,6 @@ The raw workbook `Regional Sales Dataset.xlsx` contains six sheets, all loaded w
 -  **Customers** — a small set of top accounts (Aibox Company, State Ltd, Pixoboo Corp) drive disproportionate revenue versus the bottom-tier accounts.
 -  **Correlation heatmap** — confirms revenue is strongly tied to unit price (r = 0.91) and cost (r = 0.85); profit margin is only weakly related to either (r ≈ -0.28 to 0.38).
 
-> Full code, charts, and commentary are in [`notebook/Regional_Sales_Analysis.ipynb`](notebook/).
-
----
-
-##  Phase 2 — Power BI Dashboard
-
-The cleaned dataset feeds a 5-page interactive Power BI report with a consistent purple/white theme, a custom home page, and a persistent slicer panel.
-
-### Navigation System
-- **Home page buttons** — four large buttons that jump directly to each analytical page.
-- **In-canvas ☰ Menu** — every analytical page has a Menu button in the top-right corner that opens a drop-down linking to Home and the other three pages, so you can navigate from anywhere without returning to Home first.
-
-![Menu Navigation](screenshots/menu_dropdown.png)
-
-### Filters
-Three synchronized slicers appear on every analytical page:
-
-![Slicers](screenshots/slicers.png)
-
-- **Order Year** — 2014 to 2018
-- **Region** — Midwest, Northeast, South, West
-- **Channel** — Distributor, Export, Wholesale
 
 ### Pages
 
@@ -181,7 +134,7 @@ jupyter notebook notebook/Regional_Sales_Analysis.ipynb
 3. If prompted, update the data source path to point to `data/Regional_Sales_Cleaned.csv` on your machine.
 4. Explore the dashboard using the Home page navigation buttons and the Order Year / Region / Channel slicers.
 
----
+
 
 ##  Future Enhancements
 
@@ -190,7 +143,7 @@ jupyter notebook notebook/Regional_Sales_Analysis.ipynb
 - Add a dedicated customer segmentation (RFM) page.
 - Publish to the Power BI Service and embed a live report link here.
 
----
+
 
 ## 👤 Author
 
