@@ -6,22 +6,6 @@
 
 ![Dashboard Home](screenshots/dashboard_home.png)
 
----
-
-## 📁 Table of Contents
-
-- [Project Overview](#-project-overview)
-- [Problem Statement & Objective](#-problem-statement--objective)
-- [Tech Stack](#-tech-stack)
-- [Repository Structure](#-repository-structure)
-- [Phase 1 — Python EDA](#-phase-1--python-eda-jupyter-notebook)
-- [Phase 2 — Power BI Dashboard](#-phase-2--power-bi-dashboard)
-- [Key Insights](#-key-insights)
-- [How to Run This Project](#-how-to-run-this-project)
-- [Future Enhancements](#-future-enhancements)
-- [Author](#-author)
-
----
 
 ## 🧭 Project Overview
 
