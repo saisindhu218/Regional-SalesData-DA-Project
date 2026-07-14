@@ -170,7 +170,7 @@ jupyter notebook notebook/Regional_Sales_Analysis.ipynb
 
 
 
-## 👤 Author
+##  Author
 
 **Rachabattuni Sai Sindhu**
 
