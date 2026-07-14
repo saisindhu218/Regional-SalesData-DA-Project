@@ -100,12 +100,18 @@ regional-sales-dashboard/
 | **Profitability & Performance Analysis** | Cost/Profit/Margin KPIs, revenue vs. cost by region, profit margin by region, orders by region |
 | **Geographic Performance** | Top 10 states by revenue/orders, U.S. filled map, revenue vs. budget by state & product |
 
-![Executive Overview](screenshots/executive_overview.png)
-![Product & Customer Analysis](screenshots/product_customer.png)
-![Profitability Analysis](screenshots/profitability.png)
-![Geographic Performance](screenshots/geographic.png)
+| Home | Executive Overview of Sales Performance |
+|------|------------------------------------------|
+| <img src="https://github.com/user-attachments/assets/e7da2ef3-3584-42ec-ac53-225958e16f0a" width="100%"> | <img src="https://github.com/user-attachments/assets/7f5f5359-d947-48a8-985e-d1af87ff2914" width="100%"> |
 
----
+| Product & Customer Analysis | Profitability & Performance Analysis |
+|------------------------------|--------------------------------------|
+| <img src="https://github.com/user-attachments/assets/5df0dd8f-3054-4904-96eb-30db468c23ee" width="100%"> | <img src="https://github.com/user-attachments/assets/953346d0-6a4f-4cf5-8128-597edc4ec67c" width="100%"> |
+
+| Geographic Performance |
+|------------------------|
+| <img src="https://github.com/user-attachments/assets/7c5d8835-93bb-4f7d-9b4a-9a4d6e4741c9" width="100%"> |
+
 
 ##  Key Insights
 
@@ -116,7 +122,7 @@ regional-sales-dashboard/
 5. Price positioning is not the primary lever for profit margin — cost control matters more.
 6. A tiered, key-account approach to customer management is supported by the wide revenue gap between top and bottom accounts.
 
----
+
 
 ##  How to Run This Project
 
