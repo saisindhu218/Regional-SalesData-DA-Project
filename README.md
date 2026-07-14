@@ -5,17 +5,6 @@
 Dataset coverage: Acme Co. USA Sales, **2014 – 2018** 
 
 
-## Project Overview
-
-This project analyzes five years of regional sales data for a fictional distribution company, **Acme Co.**, taking it through the complete analytics lifecycle:
-
-1. **Phase 1 — Exploratory Data Analysis (Python / Jupyter Notebook):** loading, cleaning, merging six raw data sheets, feature engineering, and a structured EDA covering sales trends, product performance, customer behavior, channel mix, and profitability.
-2. **Phase 2 — Interactive Power BI Dashboard:** a polished, 5-page, fully interactive report built on the cleaned dataset, with a custom navigation system, synchronized slicers, KPI cards, and drill-down visuals.
-
-The goal is to demonstrate the same workflow used by data analysts and BI developers in industry: raw data → clean data → insight → a self-service dashboard a business stakeholder can explore without touching a line of code.
-
-
-
 ##  Problem Statement & Objective
 
 **Problem Statement:** Organizations need to understand the factors influencing sales and profitability. This project analyzes historical sales data to identify key trends, performance drivers, and business opportunities across products, channels, customers, and regions.
@@ -26,6 +15,12 @@ The goal is to demonstrate the same workflow used by data analysts and BI develo
 - Understanding profitability drivers such as pricing, cost, and sales channel.
 - Supporting data-driven decisions through visualization and an interactive reporting layer.
 
+
+## Project Overview
+
+This project presents an end-to-end Business Intelligence solution built using Python and Power BI. Beginning with raw multi-sheet Excel data, the workflow includes data cleaning, exploratory data analysis (EDA), feature engineering, and the development of an interactive Power BI dashboard that enables business users to analyze sales performance across products, customers, regions, and channels from 2014 to 2018.
+
+The project demonstrates the complete analytics lifecycle followed in industry—from raw data preparation to business insight generation through interactive visualizations.
 
 
 ##  Tech Stack
@@ -48,30 +43,41 @@ The goal is to demonstrate the same workflow used by data analysts and BI develo
 regional-sales-dashboard/
 │
 ├── data/
-│   ├── Regional Sales Dataset.xlsx        # Raw multi-sheet source workbook
-│   └── Regional_Sales_Cleaned.csv         # Cleaned, merged, feature-engineered dataset
+│   ├── Regional Sales Dataset.xlsx      
+│   └── Regional_Sales_Cleaned.csv     
 │
 ├── notebook/
-│   └── Regional_Sales_Analysis.ipynb      # Full EDA notebook (cleaning, wrangling, charts)
+│   └── Regional_Sales_Analysis.ipynb     
 │
 ├── powerbi/
-│   └── Regional_Sales_Dashboard.pbix      # Power BI report file
+│   └── Regional_Sales_Dashboard.pbix     
 │
 ├── screenshots/
-│   ├── dashboard_home.png                 # Home / navigation page
-│   ├── executive_overview.png             # Executive Overview of Sales Performance
-│   ├── product_customer.png               # Product & Customer Analysis
-│   ├── profitability.png                  # Profitability & Performance Analysis
-│   ├── geographic.png                     # Geographic Performance
-│   ├── menu_dropdown.png                  # In-canvas ☰ Menu navigation
-│   └── slicers.png                        # Order Year / Region / Channel slicers
+│   ├── dashboard_home.png                 
+│   ├── executive_overview.png            
+│   ├── product_customer.png              
+│   ├── profitability.png                 
+│   ├── geographic.png                     
+│   ├── menu_dropdown.png                 
+│   └── slicers.png                       
 │
 ├── report/
-│   └── Regional_Sales_Dashboard_Project_Report.docx   # Full written project report
+│   └── Regional_Sales_Dashboard_Project_Report.docx  
 │
 └── README.md
 ```
 
+### Data Preparation
+
+The raw dataset consisted of six related Excel sheets containing sales orders, customers, products, regional information, state mappings, and annual budgets.
+
+The preprocessing pipeline included:
+
+- Merging multiple worksheets into a unified analytical dataset
+- Handling missing values
+- Standardizing column names
+- Creating derived business metrics
+- Preparing the dataset for Power BI
 
 ### Feature Engineering
 | Column | Formula | Purpose |
@@ -92,7 +98,7 @@ regional-sales-dashboard/
 
 ### Pages
 
-| Page | Description |
+| Dashboard Pages | Description |
 |---|---|
 | **Home** | Landing page with navigation buttons to all four analytical pages |
 | **Executive Overview of Sales Performance** | KPI cards (Revenue, Profit, Orders, Margin %, Revenue/Order), monthly trend, revenue by region, channel donut, top 10 products |
@@ -113,14 +119,27 @@ regional-sales-dashboard/
 | <img src="https://github.com/user-attachments/assets/7c5d8835-93bb-4f7d-9b4a-9a4d6e4741c9" width="100%"> |
 
 
+## Dashboard Features
+
+- Interactive 5-page Power BI report
+- Custom Home page with navigation buttons
+- Collapsible navigation menu using bookmarks
+- Dynamic KPI cards
+- Cross-filtering across visuals
+- Synchronized slicers (Year, Region, Channel)
+- Drill-down enabled charts
+- Filled Map visualization for geographical analysis
+- Budget vs Revenue comparison
+- Responsive page navigation across the report
+
 ##  Key Insights
 
-1. Sales are highly seasonal and repeatable — useful for inventory and staffing planning.
-2. Revenue is concentrated in a handful of products and states, creating concentration risk worth monitoring.
-3. The top revenue product is not the top profit product — both rankings should be tracked.
-4. Wholesale is the volume channel, not necessarily the margin channel — all channels convert at a similar rate.
-5. Price positioning is not the primary lever for profit margin — cost control matters more.
-6. A tiered, key-account approach to customer management is supported by the wide revenue gap between top and bottom accounts.
+- Sales are highly seasonal and repeatable — useful for inventory and staffing planning.
+- Revenue is concentrated in a handful of products and states, creating concentration risk worth monitoring.
+- The top revenue product is not the top profit product — both rankings should be tracked.
+- Wholesale is the volume channel, not necessarily the margin channel — all channels convert at a similar rate.
+- Price positioning is not the primary lever for profit margin — cost control matters more.
+- A tiered, key-account approach to customer management is supported by the wide revenue gap between top and bottom accounts.
 
 
 
